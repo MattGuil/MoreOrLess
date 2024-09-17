@@ -8,6 +8,7 @@
 import Foundation
 
 func comment(attempts: Int) -> String {
+    print("")
     switch attempts {
         case 1...2:
             return "Congratulations, you're very lucky!"
@@ -23,7 +24,13 @@ func comment(attempts: Int) -> String {
 }
 
 func review(attempts: [Int]) -> Void {
-    print(attempts.map { String($0) }.joined(separator: ", "))
+    print("")
+    print("## REVIEW ##")
+    print("# Number of attempts: " + String(attempts.count))
+    print("# History: ") // attempts.map { String($0) }.joined(separator: ", ")
+    for (i, attempt) in attempts.enumerated() {
+        print("     Attempt \(i + 1): \(attempt)")
+    }
 }
 
 print("Please enter your name:")
@@ -33,26 +40,25 @@ if let name = readLine() {
     let answer = Int.random(in: 1...100)
     var win = false
     var attempts : [Int] = []
-    var lastAttempt = -1
     
     print("Guess a number between 1 and 100:")
     while !win {
         if let input = readLine(), let attempt = Int(input) {
-            if (attempt == lastAttempt) {
+            if (attempts.contains(attempt)) {
                 print("Warning: you already tried this value. Attempt not counted.")
             } else {
                 attempts.append(attempt)
+                let madBot = Int.random(in: 1...10) == 1
                 if attempt < answer {
-                    print("More")
+                    madBot ? print("Less") : print("More")
                 } else if attempt > answer {
-                    print("Less")
+                    madBot ? print("More") : print("Less")
                 } else {
                     win = true
                     print(comment(attempts: attempts.count))
                     review(attempts: attempts)
                 }
             }
-            lastAttempt = attempt
         } else {
             print("Please enter a valid number.")
         }
