@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		671730932C99A35F00B43DEE /* MoreOrLessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671730922C99A35F00B43DEE /* MoreOrLessApp.swift */; };
-		671730952C99A35F00B43DEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671730942C99A35F00B43DEE /* ContentView.swift */; };
 		671730972C99A36000B43DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671730962C99A36000B43DEE /* Assets.xcassets */; };
 		6717309A2C99A36000B43DEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671730992C99A36000B43DEE /* Preview Assets.xcassets */; };
+		67BCCC1C2CA2C6BB00DEA667 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCBE22CA2B50800DEA667 /* Comment.swift */; };
+		67BCCC1D2CA2C6BE00DEA667 /* MoreOrLessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671730922C99A35F00B43DEE /* MoreOrLessApp.swift */; };
+		67BCCC1E2CA2C6C100DEA667 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671730942C99A35F00B43DEE /* ContentView.swift */; };
 		67DC28A42C9076F30055C483 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DC28A32C9076F30055C483 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,12 +33,21 @@
 		671730942C99A35F00B43DEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		671730962C99A36000B43DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		671730992C99A36000B43DEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		67BCCBE22CA2B50800DEA667 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		67BCCBE82CA2C50A00DEA667 /* MoreOrLessMacOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoreOrLessMacOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DC28A02C9076F30055C483 /* MoreOrLess */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MoreOrLess; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DC28A32C9076F30055C483 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6717308D2C99A35F00B43DEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BCCBE52CA2C50A00DEA667 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -57,6 +67,7 @@
 		671730912C99A35F00B43DEE /* MoreOrLessApp */ = {
 			isa = PBXGroup;
 			children = (
+				67BCCBE22CA2B50800DEA667 /* Comment.swift */,
 				671730922C99A35F00B43DEE /* MoreOrLessApp.swift */,
 				671730942C99A35F00B43DEE /* ContentView.swift */,
 				671730962C99A36000B43DEE /* Assets.xcassets */,
@@ -87,6 +98,7 @@
 			children = (
 				67DC28A02C9076F30055C483 /* MoreOrLess */,
 				671730902C99A35F00B43DEE /* MoreOrLessApp.app */,
+				67BCCBE82CA2C50A00DEA667 /* MoreOrLessMacOSApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +131,23 @@
 			productReference = 671730902C99A35F00B43DEE /* MoreOrLessApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		67BCCBE72CA2C50A00DEA667 /* MoreOrLessMacOSApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67BCCC0A2CA2C50B00DEA667 /* Build configuration list for PBXNativeTarget "MoreOrLessMacOSApp" */;
+			buildPhases = (
+				67BCCBE42CA2C50A00DEA667 /* Sources */,
+				67BCCBE52CA2C50A00DEA667 /* Frameworks */,
+				67BCCBE62CA2C50A00DEA667 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoreOrLessMacOSApp;
+			productName = MoreOrLessMacOSApp;
+			productReference = 67BCCBE82CA2C50A00DEA667 /* MoreOrLessMacOSApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 		67DC289F2C9076F30055C483 /* MoreOrLess */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67DC28A72C9076F30055C483 /* Build configuration list for PBXNativeTarget "MoreOrLess" */;
@@ -149,6 +178,9 @@
 					6717308F2C99A35F00B43DEE = {
 						CreatedOnToolsVersion = 15.4;
 					};
+					67BCCBE72CA2C50A00DEA667 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 					67DC289F2C9076F30055C483 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -169,6 +201,7 @@
 			targets = (
 				67DC289F2C9076F30055C483 /* MoreOrLess */,
 				6717308F2C99A35F00B43DEE /* MoreOrLessApp */,
+				67BCCBE72CA2C50A00DEA667 /* MoreOrLessMacOSApp */,
 			);
 		};
 /* End PBXProject section */
@@ -183,6 +216,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67BCCBE62CA2C50A00DEA667 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -190,8 +230,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				671730952C99A35F00B43DEE /* ContentView.swift in Sources */,
-				671730932C99A35F00B43DEE /* MoreOrLessApp.swift in Sources */,
+				67BCCC1D2CA2C6BE00DEA667 /* MoreOrLessApp.swift in Sources */,
+				67BCCC1C2CA2C6BB00DEA667 /* Comment.swift in Sources */,
+				67BCCC1E2CA2C6C100DEA667 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BCCBE42CA2C50A00DEA667 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,9 +259,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoreOrLessApp/Preview Content\"";
+				DEVELOPMENT_TEAM = HR9LYXBJ88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -229,6 +279,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ICOM.MoreOrLess-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -241,9 +292,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoreOrLessApp/Preview Content\"";
+				DEVELOPMENT_TEAM = HR9LYXBJ88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -259,11 +312,62 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ICOM.MoreOrLess-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67BCCC0B2CA2C50B00DEA667 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MoreOrLessMacOSApp/MoreOrLessMacOSApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MoreOrLessMacOSApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ICOM.MoreOrLess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		67BCCC0C2CA2C50B00DEA667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MoreOrLessMacOSApp/MoreOrLessMacOSApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MoreOrLessMacOSApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ICOM.MoreOrLess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -411,6 +515,15 @@
 			buildConfigurations = (
 				671730B12C99A36000B43DEE /* Debug */,
 				671730B22C99A36000B43DEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67BCCC0A2CA2C50B00DEA667 /* Build configuration list for PBXNativeTarget "MoreOrLessMacOSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67BCCC0B2CA2C50B00DEA667 /* Debug */,
+				67BCCC0C2CA2C50B00DEA667 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
